@@ -1,0 +1,11 @@
+Description:
+
+The Python script is designed to analyze and visualize the bus load from a CSV file containing Controller Area Network (CAN) data. It utilizes various libraries such as Pandas for data manipulation, Matplotlib for data visualization, and Tkinter for the file selection dialog.
+
+The script begins by prompting the user to select a CSV file via a file dialog, assuming the file contains columns named 'Date' and 'Time' representing timestamp information. It reads the CSV file into a Pandas DataFrame and converts the 'Date' and 'Time' columns into a single 'Timestamp' column in datetime format.
+
+Next, it aggregates data by tenths of a second and calculates the bus load based on the aggregated Data Length Code (DLC) values from the CAN data. The bus load is computed using a specific formula and is plotted over time, with annotations indicating the maximum, minimum, and average bus loads.
+
+The graphical representation provides insights into the bus load behavior over time, aiding in understanding the performance of the CAN system operating at a presumed ISOBUS 250kb/s speed.
+
+Users can leverage this script to quickly analyze and visualize the bus load distribution, helping in identifying peak and low periods of data transmission within the CAN network.
